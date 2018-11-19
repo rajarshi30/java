@@ -1,0 +1,1 @@
+java -cp C:/Users/Hallinan/eclipse-workspace/Jenkin/bin;C:/Users/Hallinan/eclipse-workspace/Jenkin/lib/* org.testng.TestNG testng.xml
