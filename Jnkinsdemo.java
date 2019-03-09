@@ -34,14 +34,12 @@ WebDriver driver = new ChromeDriver(options);
 // driver.quit();
 // driver.navigate().to("http://www.amazon.com");
 // //*[@id="searchBar"]/div/input
-// Select s1 = new
+ Select s1 = new
 Select(driver.findElement(By.xpath("//*[@id=\"searchDropdownBox\"]")));
-// s1.selectByVisibleText("Computers");
-Page 1
-sample java
+s1.selectByVisibleText("Computers");
 //
-driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("sony
-vio");
+//driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("sony
+//vio");
 //
 driver.findElement(By.xpath("//*[@id=\"nav-search\"]/form/div[2]/div/input")).click
 ();
