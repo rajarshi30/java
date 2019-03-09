@@ -72,15 +72,12 @@ driver.navigate().to("http://www.amazon.com");
 Select s1 = new
 Select(driver.findElement(By.xpath("//*[@id=\"searchDropdownBox\"]")));
 s1.selectByVisibleText("Computers");
-driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys(sh.getCel
-l(col,row).getContents());
+driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys(sh.getCell(col,row).getContents());
 driver.findElement(By.xpath("//*[@id=\"nav-search\"]/form/div[2]/div/input")).click
 ();
 //
 driver.findElement(By.xpath("/html/body/div[2]/div/form/div[1]/div[1]/input")).send
 Keys("5N1AT2MK0EC806909");
-Page 2
-sample java
 //
 driver.findElement(By.xpath("/html/body/div[2]/div/form/div[1]/div[2]/button")).cli
 ck();
