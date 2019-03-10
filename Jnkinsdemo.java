@@ -1,6 +1,4 @@
 package jenkindemo;
-import org.testng.annotations.Test;
-import org.testng.TestNG;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.HashMap;
@@ -14,10 +12,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 public class Jnkinsdemo {
- 
-@Beforemethod
-public static beforeexcel() throws InterruptedException, BiffException,
-IOException {
+ public static void main(String[] args) throws InterruptedException, BiffException, IOException {
 Map<String, Object> prefs = new HashMap<String, Object>();
 prefs.put("profile.default_content_setting_values.notifications",2);
 System.setProperty("webdriver.chrome.driver","C:/Users/RAJARSHI/Downloads/chromedri
@@ -51,8 +46,6 @@ driver.findElement(By.xpath("//*[@id=\"nav-search\"]/form/div[2]/div/input")).cl
 Jnkinsdemo DT = new Jnkinsdemo();
 DT.readexcel();
 }
-                   
-@Test                   
 public void readexcel() throws BiffException,IOException
 {String FilePath = "C:\\Users\\RAJARSHI\\Downloads\\INPUT DATA.xls";
 FileInputStream fs = new FileInputStream(FilePath);
