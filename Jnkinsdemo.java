@@ -21,18 +21,7 @@ ChromeOptions options = new ChromeOptions();
 options.addArguments("disable-infobars");
 options.setExperimentalOption("prefs",prefs);
 WebDriver driver = new ChromeDriver(options);
-// driver.get("http://www.facebook.com");
-//driver.manage().window().maximize();
-// driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("rajarshi30");
-// driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("password-35");
-//driver.navigate().to("http://www.facebook.com");
-// driver.findElement(By.xpath("//*[@id=\"u_0_2\"]")).click();
-// driver.findElement(By.xpath("
-//*[@id=\"u_u_2\"]/input[2]")).sendKeys("Sreyashi Das");
-//driver.findElement(By.xpath("//*[@id=\"js_30\"]/form/button")).click();
-// driver.quit();
-// driver.navigate().to("http://www.amazon.com");
-// //*[@id="searchBar"]/div/input
+driver.navigate().to("http://www.amazon.com");
  Select s1 = new
 Select(driver.findElement(By.xpath("//*[@id=\"searchDropdownBox\"]")));
 s1.selectByVisibleText("Computers");
